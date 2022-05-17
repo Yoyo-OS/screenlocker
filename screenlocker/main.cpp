@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 CutefishOS Team.
+ * Copyright (C) 2021 YoyoOS Team.
  *
  * Author:     Reion Wong <reionwong@gmail.com>
  *
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 {
     Application app(argc, argv);
 
-    if (!QDBusConnection::sessionBus().registerService("com.cutefish.ScreenLocker")) {
+    if (!QDBusConnection::sessionBus().registerService("com.yoyo.ScreenLocker")) {
         return -1;
     }
 
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 
     // Translations
     QLocale locale;
-    QString qmFilePath = QString("%1/%2.qm").arg("/usr/share/cutefish-screenlocker/translations/").arg(locale.name());
+    QString qmFilePath = QString("%1/%2.qm").arg("/usr/share/yoyo-screenlocker/translations/").arg(locale.name());
     if (QFile::exists(qmFilePath)) {
         QTranslator *translator = new QTranslator(app.instance());
         if (translator->load(qmFilePath)) {
