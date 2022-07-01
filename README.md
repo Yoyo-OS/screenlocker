@@ -1,5 +1,7 @@
 # Screen locker
 
+[![Build](https://github.com/Yoyo-OS/screenlocker/actions/workflows/build.yml/badge.svg)](https://github.com/Yoyo-OS/screenlocker/actions/workflows/build.yml)
+
 ## Third Party Code
 
 kcheckpass
